@@ -20,8 +20,7 @@ int main()
     char str[100];
     scanf("%s", str);
     int i, l = 0;
-    for (i = 0; str[i] != '\0'; i++)
-        ;
+    for (i = 0; str[i] != '\0'; i++);
     l = i;
     for (i = 0; i < l; i++)
     {
@@ -45,8 +44,7 @@ int main()
     char str[100];
     scanf("%s", str);
     int i, l = 0;
-    for (i = 0; str[i] != '\0'; i++)
-        ;
+    for (i = 0; str[i] != '\0'; i++);
     l = i;
     //printf("%d\n",l);
     if (str[0] == '_' || ((int)str[0] >= 65 && (int)str[0] <= 90 || (int)str[0] >= 97 && (int)str[0] <= 122))
@@ -89,8 +87,7 @@ int main()
     char str[100];
     scanf("%s", str);
     int i, l = 0;
-    for (i = 0; str[i] != '\0'; i++)
-        ;
+    for (i = 0; str[i] != '\0'; i++);
     l = i;
     //printf("%d\n",l);
     if (str[0] == '_' || ((int)str[0] >= 65 && (int)str[0] <= 90 || (int)str[0] >= 97 && (int)str[0] <= 122))
@@ -139,8 +136,7 @@ int main()
     char str[100];
     scanf("%s", str);
     int i, l = 0;
-    for (i = 0; str[i] != '\0'; i++)
-        ;
+    for (i = 0; str[i] != '\0'; i++);
     l = i;
     char o[2];
     o[0] = str[1];
@@ -168,8 +164,7 @@ int main()
     char str[100];
     scanf("%s", str);
     int i, l = 0;
-    for (i = 0; str[i] != '\0'; i++)
-        ;
+    for (i = 0; str[i] != '\0'; i++);
     l = i;
     if (str[0] == 'a' && str[l - 1] == 'b')
     {
