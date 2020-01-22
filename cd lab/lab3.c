@@ -25,7 +25,7 @@ int main()
     for (i = 0; i < l; i++)
     {
         int a = str[i];
-        if (a >= 48 & a <= 57)
+        if (a >= 48 && a <= 57)
             printf("%c ", str[i]);
     }
     printf("\n");
@@ -51,11 +51,10 @@ int main()
     {
         for (i = 0; i < l; i++)
         {
-            if (!((str[i] == '_') || (str[i] > 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= '0' && str[i] <= '9')))
+            if (!((str[i] == '_') || (str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= '0' && str[i] <= '9')))
             {
                 printf("invalid identifier\n");
                 exit(0);
-                // exit(0); stdlib.h contains it so to avoid it i used break
             }
         }
     }
@@ -94,10 +93,9 @@ int main()
     {
         for (i = 0; i < l; i++)
         {
-            if (!((str[i] == '_') || (str[i] > 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= '0' && str[i] <= '9')))
+            if (!((str[i] == '_') || (str[i] >='a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= '0' && str[i] <= '9')))
             {
                 goto o;
-                // exit(0); stdlib.h contains it so to avoid it i used break
             }
         }
     }
@@ -113,8 +111,7 @@ int main()
         exit(0);
     }
 // label o
-o:
-    if (str[0] == '+' || str[0] == '-' || str[0] == '*' || str[0] == '/' || str[0] == '+' || str[0] == '<' || str[0] == '>' || str[0] == '=' || str[0] == '!' || str[0] == '^' || str[0] == '&' || str[0] == '?' || str[0] == '%' || str[0] == '|' || str[0] == '~')
+o:if (str[0] == '+' || str[0] == '-' || str[0] == '*' || str[0] == '/' || str[0] == '+' || str[0] == '<' || str[0] == '>' || str[0] == '=' || str[0] == '!' || str[0] == '^' || str[0] == '&' || str[0] == '?' || str[0] == '%' || str[0] == '|' || str[0] == '~')
     {
         printf("valid operator\n");
         exit(0);
