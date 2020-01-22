@@ -170,21 +170,11 @@ int main()
                 continue;
             else
                 break;
-    }
-    else
-    {
-        printf("string does not belongs to the following regular expression i.e a(a+b)*b + b(a+b)*a\n");
-        exit(0);
-    }
-    if (i == l)
-    {
-        printf("string belongs to the following regular expression i.e a(a+b)*b + b(a+b)*a\n");
-        exit(0);
-    }
-    else
-    {
-        printf("string does not belongs to the following regular expression i.e a(a+b)*b + b(a+b)*a\n");
-        exit(0);
+      if (i == l)
+      {
+         printf("string belongs to the following regular expression i.e a(a+b)*b + b(a+b)*a\n");
+         exit(0);
+      }
     }
     if (str[0] == 'b' && str[l - 1] == 'a')
     {
@@ -193,22 +183,17 @@ int main()
                 continue;
             else
                 break;
-    }
+      if (i == l)
+      {
+         printf("string belongs to the following regular expression i.e a(a+b)*b + b(a+b)*a\n");
+         exit(0);
+      }
     else
     {
         printf("string does not belongs to the following regular expression i.e a(a+b)*b + b(a+b)*a\n");
         exit(0);
     }
-    if (i == l)
-    {
-        printf("string belongs to the following regular expression i.e a(a+b)*b + b(a+b)*a\n");
-        exit(0);
-    }
-    else
-    {
-        printf("string does not belongs to the following regular expression i.e a(a+b)*b + b(a+b)*a\n");
-        exit(0);
-    }
+   }
 }
 
 */
